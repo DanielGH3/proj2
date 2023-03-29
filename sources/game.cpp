@@ -104,7 +104,7 @@ void Game::playTurn(){
     addToLastTurn(c1, c2);
 
     if(c1 != NULL && c2 != NULL){
-        if(c1->getValue() == c2->getValue()){
+        if(c1->getValue() != c2->getValue()){
             p1->normalInc();
             p2->normalInc();
         }
